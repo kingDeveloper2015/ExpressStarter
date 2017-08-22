@@ -10,17 +10,15 @@ version: 0.2
 phases:
   install:
     commands:
-      - cd /home/ubuntu/
       - npm install
       - sudo npm install -g forever
-  pre_build:
-    commands:
-      - sudo apt-get install python-software-properties
-      - curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
-      - sudo apt-get install nodejs
+#  pre_build:
+#    commands:
+#      - sudo apt-get install python-software-properties
+#      - curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
+#      - sudo apt-get install nodejs
   build:
     commands:
-      - cd /home/ubuntu/
       - forever start bin/www
 #  post_build:
 #    commands:

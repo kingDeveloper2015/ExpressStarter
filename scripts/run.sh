@@ -1,3 +1,3 @@
 #!/bin/bash
 cd /home/ubuntu/
-nohup npm start
+forever bin/www

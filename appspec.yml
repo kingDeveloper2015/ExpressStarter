@@ -106,7 +106,7 @@ hooks:
 #   in the script specified in "location".
   ApplicationStart:
     - location: scripts/run.sh
-      timeout: 300
+      timeout: 30
       runas: root
 #    - location:
 #      timeout:

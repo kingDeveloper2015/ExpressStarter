@@ -1,3 +1,3 @@
 #!/bin/bash
 cd /home/ubuntu/
-forever bin/www
+forever start bin/www

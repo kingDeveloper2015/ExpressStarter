@@ -105,9 +105,7 @@ exports.onConference = function(req, res) {
     }
 
     sendMessageToSlackResponseURL(response_url, message)
-
-
-
+    res.status(200).send({"title_link" : Config.SERVER_BASEURL_HTTPS + "?user_id=" + user_id});
     //res.end();
 
 };

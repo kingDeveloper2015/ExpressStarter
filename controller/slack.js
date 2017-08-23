@@ -94,7 +94,7 @@ exports.onConference = function(req, res) {
 
     var message = {
         "response_type": "in_channel",
-        "text": "Conference is created! You can join to this conference by calling to number +1 (857) 214-2025",
+        "text": "Standup Recording +1 (857) 214-2025",
         "attachments": [
             {
                 "title": "Standup Recording",
@@ -105,13 +105,14 @@ exports.onConference = function(req, res) {
     }
 
     //sendMessageToSlackResponseURL(response_url, message);
-    sendMessage("Conference is created! You can join to this conference by calling to number +1 (857) 214-2025", conference_channel, { "attachments": [
+    sendMessage("Standup Recording +1 (857) 214-2025", conference_channel, { "attachments": [
         {
             "title": "Standup Recording",
             "title_link": Config.SERVER_BASEURL_HTTPS + "?user_id=" + user_id,
             "color": "#3AA3E3"
         }
     ]});
+    agent_call();
     res.status(200).send({"title_link" : Config.SERVER_BASEURL_HTTPS + "?user_id=" + user_id});
     //res.end();
 
@@ -328,9 +329,9 @@ exports.handleRecordingStatus = function (request, response) {
             var parse = JSON.parse(pullResults);
 
             console.log(parse.Location);
-            sendMessage("Conference end!", conference_channel, { "attachments": [
+            sendMessage("A recording of the Standup is available", conference_channel, { "attachments": [
                 {
-                    "title": "Record file",
+                    "title": "Listen to the recording",
                     "title_link": Config.SERVER_BASEURL + "play?url=" + parse.Location,
                     "color": "#3AA3E3"
                 }

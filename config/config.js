@@ -13,7 +13,7 @@ exports.TWILLIO_APP_SID = 'APc7887bda6febe9364320b94a8c747f73';
 exports.MODERATOR = '+18572142025';
 //exports.TWILLIO_APP_SID = 'PNfbce39ba849b463ef78e52062075e060';
 
-exports.SERVER_BASEURL = 'http://18.220.182.168:3000/';//https://18.220.182.168:3000/';
-exports.SERVER_BASEURL_HTTPS = 'https://18.220.182.168:8443/';
+exports.SERVER_BASEURL = 'http://18.220.180.88:3000/';//https://18.220.182.168:3000/';
+exports.SERVER_BASEURL_HTTPS = 'https://18.220.180.88:8443/';
 // exports.SERVER_BASEURL = 'http://c82297d7.ngrok.io/';//https://18.220.182.168:3000/';
 // exports.SERVER_BASEURL_HTTPS = 'https://c82297d7.ngrok.io/';

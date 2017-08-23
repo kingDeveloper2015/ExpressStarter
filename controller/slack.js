@@ -104,7 +104,14 @@ exports.onConference = function(req, res) {
         ]
     }
 
-    sendMessageToSlackResponseURL(response_url, message)
+    //sendMessageToSlackResponseURL(response_url, message);
+    sendMessage("Conference end!", conference_channel, { "attachments": [
+        {
+            "title": "Standup Recording",
+            "title_link": Config.SERVER_BASEURL_HTTPS + "?user_id=" + user_id,
+            "color": "#3AA3E3"
+        }
+    ]})
     res.status(200).send({"title_link" : Config.SERVER_BASEURL_HTTPS + "?user_id=" + user_id});
     //res.end();
 

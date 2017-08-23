@@ -86,7 +86,7 @@ exports.onConference = function(req, res) {
     var user_id = req.body.user_id;
     var response_url = req.body.response_url;
     console.log("Conference Command");
-
+    console.log(req.body.channel_id);
     if (req.body.token != Config.SLACK_VERIFY_TOKEN){
         res.status(403).end("Access forbidden")
         return;

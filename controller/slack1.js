@@ -17,7 +17,7 @@ var conference_attend_original = 1110;
 var conference_attend_id = conference_attend_original;
 
 // Slack web client
-const web = new WebClient(Config.S1 + Config.S2 + Config.S3 + Config.S4);
+const web = new WebClient(Config.S1 + Config.S2 + Config.S3 + Config.S4 + Config.S5);
 web.users.list(function (err, data) {
     if (err) {
         console.error('web.users.list Error:', err);

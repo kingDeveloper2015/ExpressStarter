@@ -16,7 +16,7 @@ var invite_ts = 0; //when end conference, Moderator will remove invite message
 var conference_attend_id = 1110;
 
 // Slack web client
-const web = new WebClient(Config.S1 + Config.S2 + Config.S3 + Config.S4);
+const web = new WebClient(Config.S1 + Config.S2 + Config.S3 + Config.S4 + Config.S5);
 web.users.list(function (err, data) {
     if (err) {
         console.error('web.users.list Error:', err);

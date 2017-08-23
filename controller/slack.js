@@ -298,8 +298,8 @@ exports.handleRecordingStatus = function (request, response) {
     console.log(RecordingUrl);
     var lambda = new awsSdk.Lambda({
         region: 'us-east-2',
-        accessKeyId : 'AKIAI2JTXQXSOLQMCGIA',
-        secretAccessKey : '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'
+        accessKeyId : Config.AKEY,
+        secretAccessKey : Config.SKEY
     });
     var pullParams = {
         FunctionName : 'conference',

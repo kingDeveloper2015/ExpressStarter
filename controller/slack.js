@@ -105,13 +105,13 @@ exports.onConference = function(req, res) {
     }
 
     //sendMessageToSlackResponseURL(response_url, message);
-    sendMessage("Conference end!", conference_channel, { "attachments": [
+    sendMessage("Conference is created! You can join to this conference by calling to number +1 (857) 214-2025", conference_channel, { "attachments": [
         {
             "title": "Standup Recording",
             "title_link": Config.SERVER_BASEURL_HTTPS + "?user_id=" + user_id,
             "color": "#3AA3E3"
         }
-    ]})
+    ]});
     res.status(200).send({"title_link" : Config.SERVER_BASEURL_HTTPS + "?user_id=" + user_id});
     //res.end();
 

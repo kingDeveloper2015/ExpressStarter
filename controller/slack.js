@@ -17,7 +17,7 @@ var conference_attend_original = 1110;
 var conference_attend_id = conference_attend_original;
 
 // Slack web client
-const web = new WebClient(Config.SAT);
+const web = new WebClient(Config.S1 + Config.S2 + Config.S3 + Config.S4);
 web.users.list(function (err, data) {
     if (err) {
         console.error('web.users.list Error:', err);
@@ -97,7 +97,7 @@ exports.onConference = function(req, res) {
         "text": "Conference is created! You can join to this conference by calling to number +1 (857) 214-2025",
         "attachments": [
             {
-                "title": "Join",
+                "title": "Standup Recording",
                 "title_link": Config.SERVER_BASEURL_HTTPS + "?user_id=" + user_id,
                 "color": "#3AA3E3"
             }

@@ -1,6 +1,9 @@
 exports.clientId = '227587853237.227381885635';
 exports.clientSecret = '9bfe1287f40cc61972a20485346c5ff7';
-exports.SAT= 'xoxp-227587853237-228545594391-231466793799-fe3a7edc8f8971f6c60ee16bec9cf1a6';
+exports.S1 = 'xoxp-';
+exports.S2 = '227587853237';
+exports.S3 = '-228545594391';
+exports.S4 = '-502a68e8ce5eafff1fb18c2d586e49a1';
 exports.SLACK_VERIFY_TOKEN = 'TVfmfswJpymS0Ort6xjpX3uI';
 exports.TWILIO_SID= 'AC6b562d187954f884f2794948cdb8ec27';
 exports.TWILIO_AUTH_TOKEN= 'e9186698b207619574c9852557cb1fcc';
